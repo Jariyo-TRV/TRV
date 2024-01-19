@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b3d0ee34c470e3428221728d2d206fe3874fdb87367b3168870f98183446428
-size 485
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+module.exports = {
+    root: true,
+    extends: [
+        'plugin:vue/vue3-essential',
+        'eslint:recommended',
+        '@vue/eslint-config-typescript',
+        '@vue/eslint-config-prettier/skip-formatting',
+    ],
+    rules: {
+        'no-var': 'error',
+        quotes: ['error', 'single'],
+        semi: ['error', 'always'],
+    },
+    parserOptions: {
+        ecmaVersion: 'latest',
+    },
+};
