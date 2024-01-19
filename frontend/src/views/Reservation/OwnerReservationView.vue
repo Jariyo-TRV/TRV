@@ -1,6 +1,6 @@
 <template>
     <div>
-
+      사업자 예약관리 페이지
     </div>
 </template>
 
