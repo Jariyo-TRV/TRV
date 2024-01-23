@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JariyoApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(JariyoApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(JariyoApplication.class, args);
+	}
 
 }
