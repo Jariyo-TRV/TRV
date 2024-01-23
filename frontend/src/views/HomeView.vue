@@ -1,9 +1,16 @@
+<template>
+  <LogoutHome v-if="isLogin" />
+  <LoginHome v-else />
+</template>
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue';
+import LogoutHome from '@/components/Home/LogoutHome.vue';
+import LoginHome from '@/components/Home/LoginHome.vue'
+
+const isLogin = false
+
 </script>
 
-<template>
-    <main>
-        <TheWelcome />
-    </main>
-</template>
+<style scoped>
+
+</style>

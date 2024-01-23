@@ -1,12 +1,3 @@
-import { ref, computed } from 'vue';
-import { defineStore } from 'pinia';
-
-export const useCounterStore = defineStore('counter', () => {
-    const count = ref(0);
-    const doubleCount = computed(() => count.value * 2);
-    function increment() {
-        count.value++;
-    }
-
-    return { count, doubleCount, increment };
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb17614258a02558a0832c49d6641e9ed062e7728768231096fc082f4961386d
+size 1854
