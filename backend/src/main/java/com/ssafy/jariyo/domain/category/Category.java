@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.category.entity;
+package com.ssafy.jariyo.domain.category;
 
 import jakarta.persistence.*;
 
