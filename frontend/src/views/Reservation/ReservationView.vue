@@ -1,15 +1,12 @@
 <template>
-    <CustomerReservation />
-  </template>
-  
-  <script setup>
- import CustomerReservation from './CustomerReservationView.vue';
-  
-  
-  const businessFile = false
-  
-  </script>
-  
-  <style scoped>
-  
-  </style>
+  <ReservationStep/>
+</template>
+
+<script setup>
+import ReservationStep from "../../components/ReservationStep.vue" 
+
+</script>
+
+<style scoped>
+
+</style>
