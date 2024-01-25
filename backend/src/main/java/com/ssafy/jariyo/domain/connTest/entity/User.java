@@ -1,23 +1,3 @@
-package com.ssafy.jariyo.domain.connTest.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Getter
-@Builder
-@Table(name = "USERS")
-@AllArgsConstructor
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Long id;
-
-    private String name;
-    private String stuNum;
-    private String email;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c8eb240fc980992ceca3ee0e09e705870e7d6b8a9d7917a0d77ad9b7991afc4
+size 435
