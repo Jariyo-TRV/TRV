@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <CustomerReservation />
   </template>
   
@@ -13,3 +14,17 @@
   <style scoped>
   
   </style>
+=======
+    <div>
+
+    </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
+>>>>>>> develop-FE-feature
