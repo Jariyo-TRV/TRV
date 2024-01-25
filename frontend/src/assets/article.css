@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:482f3b8ce96d543ff39ada8d023bcb59190efee63a712f0d23b9b97f451028b7
-size 265
+.board-list {
+    width: 90%;
+    margin: auto;
+}
+
+.board-detail {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.board-contents {
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.common-buttons {
+    padding: 8px;
+    text-align: right;
+}
