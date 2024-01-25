@@ -1,13 +1,7 @@
 <template>
-    <div>
-        음식점 상세페이지(관리자)
-    </div>
+    <div>음식점 상세페이지(관리자)</div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style scoped></style>
