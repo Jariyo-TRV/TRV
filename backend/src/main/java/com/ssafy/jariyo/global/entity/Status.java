@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.user.entity;
+package com.ssafy.jariyo.global.entity;
 
 public enum Status {
     ACTIVE, INACTIVE
