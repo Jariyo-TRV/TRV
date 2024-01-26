@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c58f6e0d0c831ba36186f20c3bfa0903d022e64837edf88e609c4527f56979f8
-size 401
+package com.ssafy.jariyo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@SpringBootApplication
+@EnableJpaAuditing
+public class JariyoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JariyoApplication.class, args);
+	}
+
+}
