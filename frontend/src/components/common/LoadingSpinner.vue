@@ -5,11 +5,13 @@
 <script setup>
 import { ref, watch } from 'vue';
 
+const props = defineProps(['loading']); // Use defineProps to access the props
+
 const loading = ref(false);
 
-// App.vue로부터 받은 loading 값을 감시하여 업데이트
+// Watch the 'loading' prop
 watch(
-    () => $props.loading,
+    () => props.loading,
     (newValue) => {
         loading.value = newValue;
     }
