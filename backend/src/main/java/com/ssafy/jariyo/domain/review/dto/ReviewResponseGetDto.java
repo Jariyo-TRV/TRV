@@ -1,2 +1,4 @@
-package com.ssafy.jariyo.domain.review.dto;public class ReviewResponseGetDto {
+package com.ssafy.jariyo.domain.review.dto;
+
+public class ReviewResponseGetDto {
 }

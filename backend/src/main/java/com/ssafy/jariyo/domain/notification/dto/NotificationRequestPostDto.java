@@ -1,2 +1,4 @@
-package com.ssafy.jariyo.domain.notification.dto;public class NotificationRequestPostDto {
+package com.ssafy.jariyo.domain.notification.dto;
+
+public class NotificationRequestPostDto {
 }
