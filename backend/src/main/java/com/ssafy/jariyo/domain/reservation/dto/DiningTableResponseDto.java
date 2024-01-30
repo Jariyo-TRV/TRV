@@ -8,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class DiningTableResponseDto {
-    private Long diningTableId;
     private Integer diningTableNumber;
     private Integer diningTableCapacity;
     private String diningTableType;
