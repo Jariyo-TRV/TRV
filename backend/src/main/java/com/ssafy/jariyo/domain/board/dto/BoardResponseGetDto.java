@@ -1,12 +1,3 @@
-package com.ssafy.jariyo.domain.board.dto;
-import com.ssafy.jariyo.domain.board.entity.BoardDomain;
-import lombok.Data;
-
-@Data
-public class BoardResponseGetDto {
-    private Long userId;
-    private Long storeId;
-    private BoardDomain domain;
-    private String title;
-    private String content;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:817e8c1702d369ed65386d6018a18f67a966feb96b57f1c3bf74954f1b62fc22
+size 394
