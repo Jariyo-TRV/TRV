@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c45af37c929e9b413dbffd50a9664f7feea2f167d2c0f5af3206e519ffb974e2
-size 502
+package com.ssafy.jariyo.global.oauth2.userinfo;
+
+
+import java.util.Map;
+
+public abstract class OAuth2UserInfo {
+
+    protected Map<String, Object> attributes;
+
+    public OAuth2UserInfo(Map<String, Object> attributes) {
+        this.attributes = attributes;
+    }
+
+    public abstract String getId(); //소셜 식별 값 : 구글 - "sub", 카카오 - "id", 네이버 - "id"
+
+    public abstract String getEmail();
+    public abstract String getNickname();
+
+    public abstract String getImageUrl();
+}
