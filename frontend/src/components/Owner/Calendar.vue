@@ -1,15 +1,3 @@
-<template>
-    <v-container>
-        <v-row justify="center">
-            <v-date-picker v-model="selectedDate" width="350"></v-date-picker>
-        </v-row>
-    </v-container>
-</template>
-
-<script setup>
-import { ref } from 'vue';
-
-const selectedDate = ref(new Date());
-</script>
-
-<style scoped></style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d1ae2fc533c18869e73f7c0189b552061688f658673e136d69bae3fcb8d835a
+size 579
