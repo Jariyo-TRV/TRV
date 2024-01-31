@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f4529aac2952025205b0871aa31bba11382803d148f8f1976150608d4ca3a0e
-size 273
+package com.ssafy.jariyo.domain.board.dto;
+
+import com.ssafy.jariyo.domain.board.entity.BoardDomain;
+import lombok.Data;
+
+@Data
+public class BoardRequestPatchDto {
+    private Long storeId;
+    private String domain;
+    private String title;
+    private String content;
+}
