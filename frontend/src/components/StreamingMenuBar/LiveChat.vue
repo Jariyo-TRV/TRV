@@ -1,13 +1,3 @@
-<template>
-  <div style="display: grid; justify-items: center; align-items: center;">
-    <img src="../../img/chat.PNG" alt="chatExample" style="height: 90%; width: 70%; display: flex;">
-  </div>
-</template>
-
-<script setup>
-
-</script>
-
-<style scoped>
-
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:92ef28e08f43fc0fe36d928aafb08ffcfd8536c4eadf855ecd0d4d5aff4340a1
+size 273
