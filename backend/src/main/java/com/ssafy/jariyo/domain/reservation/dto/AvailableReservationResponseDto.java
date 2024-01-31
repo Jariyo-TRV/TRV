@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16cec2c7845509c6cdb52f661e7b0e31fb574c928cd0db714e4af77996c687b7
-size 293
+package com.ssafy.jariyo.domain.reservation.dto;
+
+import lombok.*;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class AvailableReservationResponseDto {
+    private Long storeId;
+    private String time;
+    private DiningTableResponseDto diningTableResponseDto;
+}
