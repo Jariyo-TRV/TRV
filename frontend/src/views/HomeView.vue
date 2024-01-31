@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e03c59ae14a2c182d8aec09137671d2bc52021fa847428b2b3e81f3bd952eee6
-size 335
+<template>
+    <LogoutHome v-if="!accessToken" />
+    <LoginHome v-else />
+</template>
+
+<script setup>
+import LogoutHome from '@/components/Home/LogoutHome.vue';
+import LoginHome from '@/components/Home/LoginHome.vue';
+
+const accessToken = localStorage.getItem('accessToken');
+const refreshToken = localStorage.getItem('refreshToken');
+</script>
+
+<style scoped></style>

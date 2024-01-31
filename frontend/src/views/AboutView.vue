@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f8c8849db220d23c6c808f604fc8b69788ca204474392c2a6d2f79c73297c5e
-size 244
+<template>
+    <div class="about">
+        <h1>This is an about page</h1>
+    </div>
+</template>
+
+<style>
+@media (min-width: 1024px) {
+    .about {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
+</style>
