@@ -7,9 +7,10 @@ export const useCounterStore = defineStore(
     'counter',
     () => {
         const API_URL = import.meta.env.VITE_API_URL;
-
+        const dataGet = ref([]);
         return {
             API_URL,
+            dataGet,
         };
     },
     { persist: true }
