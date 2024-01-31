@@ -1,10 +1,3 @@
-package com.ssafy.jariyo.domain.store.repository;
-
-import com.ssafy.jariyo.domain.store.entity.Store;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface StoreRepository extends JpaRepository<Store, Long> {
-    Store findByStoreId(Long storeId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5e0c5ebfefacda293d185ee0e8d662601c0015e9d1c43cdf7edc58597007b89
+size 535

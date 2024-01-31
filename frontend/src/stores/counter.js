@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d0176e80fcacfb2c58e8280ee180d8c3cafcbf362cfe72ab0d4bdf61ec61669
-size 2575
+import { ref, computed } from 'vue';
+import { defineStore } from 'pinia';
+import axios from 'axios';
+import router from '@/router';
+
+export const useCounterStore = defineStore(
+    'counter',
+    () => {
+        const API_URL = import.meta.env.VITE_API_URL;
+
+        return {
+            API_URL,
+        };
+    },
+    { persist: true }
+);

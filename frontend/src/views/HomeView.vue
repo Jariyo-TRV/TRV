@@ -7,9 +7,8 @@
 import LogoutHome from '@/components/Home/LogoutHome.vue';
 import LoginHome from '@/components/Home/LoginHome.vue';
 
-
 const accessToken = localStorage.getItem('accessToken');
-const isLogin = false;
+const refreshToken = localStorage.getItem('refreshToken');
 </script>
 
 <style scoped></style>
