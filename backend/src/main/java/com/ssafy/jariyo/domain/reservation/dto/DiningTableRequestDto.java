@@ -13,4 +13,5 @@ public class DiningTableRequestDto {
     private String diningTableType;
     private Integer diningTableX;
     private Integer diningTableY;
+    private Boolean diningTableIsAvailable;
 }
