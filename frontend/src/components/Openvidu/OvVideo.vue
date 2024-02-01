@@ -1,13 +1,17 @@
 <template>
-  <video autoplay />
+    <video autoplay />
 </template>
 
-<script setup>
-import { onMounted, ref } from 'vue'
+<script>
+export default {
+    name: 'OvVideo',
 
-const streamManager = ref()
+    props: {
+        streamManager: Object,
+    },
 
-onMounted(() => {
-  streamManager.value.addVideoElement(ref(null))
-})
+    mounted() {
+        this.streamManager.addVideoElement(this.$el);
+    },
+};
 </script>
