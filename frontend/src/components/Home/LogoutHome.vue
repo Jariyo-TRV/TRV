@@ -1,11 +1,3 @@
-<template>
-    <body>
-        <section class="section1"></section>
-        <section class="section2"></section>
-        <p class="title">자리요를 방문해주셔서 감사합니다.</p>
-    </body>
-</template>
-
-<script setup></script>
-
-<style src="@/assets/style.css"></style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:1adeb82ddee30bbc748c3bbff846bc512fb7af9b3e24e2de379d14092586010e
+size 4136
