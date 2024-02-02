@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ddcd392f55ad06ed6b840a4e4060250921ef874c03eef900e3d4ab1deed168f
-size 401
+package com.ssafy.jariyo.domain.reservation.dto;
+
+import lombok.*;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class DiningTableRequestDto {
+    private Integer diningTableNumber;
+    private Integer diningTableCapacity;
+    private String diningTableType;
+    private Integer diningTableX;
+    private Integer diningTableY;
+    private Boolean diningTableIsAvailable;
+}
