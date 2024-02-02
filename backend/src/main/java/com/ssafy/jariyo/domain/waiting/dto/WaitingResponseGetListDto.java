@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7bfd446f01be86728739a947ece8483713d34d8a75e2975452433a6e473c56ef
-size 211
+package com.ssafy.jariyo.domain.waiting.dto;
+
+import java.util.List;
+
+public class WaitingResponseGetListDto {
+    List<WaitingResponseGetDto> list;
+    private int totalPages;
+    private long totalElements;
+}
