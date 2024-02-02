@@ -1,23 +1,21 @@
 package com.ssafy.jariyo.domain.playroom.dto;
 
-import lombok.*;
+import lombok.Data;
 
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
 
 @Data
-public class PlayroomResponseGetDto {
+public class PlayroomResponseGetListDto {
     private Long storeId;
     private String title;
-    private LocalDateTime startTime;
+    private Timestamp startTime;
+    private Timestamp endTime;
     private String image;
+    private String status;
     private String info;
     private Integer userCount;
+    private Integer likes;
     private String category;
-
-    private Long userId;
-    private String userNickname;
-    private String userImage;
 }
 
 
