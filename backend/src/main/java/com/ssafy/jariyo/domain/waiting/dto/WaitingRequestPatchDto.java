@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07f6b638a64c82981b050eb3c23ecd9dea1c0ffba90b63f7e962c2073096cbda
-size 306
+package com.ssafy.jariyo.domain.waiting.dto;
+
+import com.ssafy.jariyo.global.entity.Status;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+public class WaitingRequestPatchDto {
+    private Integer waitingSequence;
+    private Integer waitingUserCount;
+    private Boolean waitingIsPostpone;
+}
