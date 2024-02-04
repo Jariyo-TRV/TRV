@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.reservation.dto;
+package com.ssafy.jariyo.domain.reservation.dto.response;
 
 import lombok.*;
 
@@ -7,11 +7,10 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @Builder
-public class DiningTableRequestDto {
+public class DiningTableResponseDto {
     private Integer diningTableNumber;
     private Integer diningTableCapacity;
     private String diningTableType;
     private Integer diningTableX;
     private Integer diningTableY;
-    private Boolean diningTableIsAvailable;
 }
