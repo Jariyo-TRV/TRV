@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aefd9d83319041d61b90b9fd20b2c5828f21d009d17ae05081f11d7b5ba94dc8
-size 451
+package com.ssafy.jariyo.domain.reservation.dto.request;
+
+import com.ssafy.jariyo.global.entity.Status;
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import lombok.*;
+
+import java.time.LocalDateTime;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class ZPassRequestDto {
+    private Long storeId;
+    private Long userId;
+    private Integer zpassQuantity;
+}
