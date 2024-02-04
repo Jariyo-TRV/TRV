@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5808acb7952fae4af3c17856ccf8fb3962b0d7f096accba75e6b92117e81583
-size 562
+package com.ssafy.jariyo.domain.store.dto;
+
+import com.ssafy.jariyo.global.entity.Status;
+import lombok.Data;
+
+import java.time.LocalDate;
+
+@Data
+public class StoreRequestPatchDto {
+    private String storePhone;
+    private String storeDetail;
+    private boolean storeIsWaiting;
+    private String storeOperationHours;
+    private Status storeReservationStatus;
+    private LocalDate storeReservationStartDate;
+    private LocalDate storeReservationEndDate;
+}
