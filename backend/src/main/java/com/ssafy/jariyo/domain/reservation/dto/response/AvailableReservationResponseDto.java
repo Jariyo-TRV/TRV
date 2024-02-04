@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.reservation.dto;
+package com.ssafy.jariyo.domain.reservation.dto.response;
 
 import lombok.*;
 
