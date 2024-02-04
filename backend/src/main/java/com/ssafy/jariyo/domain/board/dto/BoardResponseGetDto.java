@@ -10,7 +10,7 @@ public class BoardResponseGetDto {
     private Long boardId;
     private Long userId;
     private String userName;
-    //private Long storeId;
+    private Long storeId;
     private List<String> images;
     private String title;
     private String content;
