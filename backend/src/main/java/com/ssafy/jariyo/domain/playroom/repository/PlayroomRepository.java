@@ -1,14 +1,3 @@
-package com.ssafy.jariyo.domain.playroom.repository;
-
-import com.ssafy.jariyo.domain.playroom.entity.Playroom;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface PlayroomRepository extends JpaRepository<Playroom, Long> {
-    Playroom findByStore_StoreId(Long storeId);
-
-    List<Playroom> findAllByTitleContaining(String keyword);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7b11f15af030e95e584c55a721266357387e6ac20ddbcf34e7788903b306a36
+size 516
