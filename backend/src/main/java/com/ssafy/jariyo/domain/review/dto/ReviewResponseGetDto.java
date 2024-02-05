@@ -10,7 +10,6 @@ public class ReviewResponseGetDto {
     private Long reviewId;
     private Long userId;
     private String userName;
-    private Long storeId;
     private List<String> images;
     private String content;
     private LocalDateTime regDate;
