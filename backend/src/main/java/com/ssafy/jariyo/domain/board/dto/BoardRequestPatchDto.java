@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class BoardRequestPatchDto {
-    private Long storeId;
     private String domain;
     private String title;
     private String content;
