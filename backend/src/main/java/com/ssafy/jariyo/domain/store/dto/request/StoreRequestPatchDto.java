@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.store.dto;
+package com.ssafy.jariyo.domain.store.dto.request;
 
 import com.ssafy.jariyo.global.entity.Status;
 import lombok.Data;
