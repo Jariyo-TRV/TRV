@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:082071f3f8bff79742efb8e5dd1d5c46af662972ee8320f66a76580f386f6ab2
-size 311
+package com.ssafy.jariyo.domain.s3image.repository;
+
+import com.ssafy.jariyo.domain.s3image.entity.S3Image;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface S3ImageRepository extends JpaRepository<S3Image, Long>  {
+
+}
