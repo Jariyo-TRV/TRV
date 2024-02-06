@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab65227ef456d770facae148001581d21f6a81e108d05e44009348d6d7e97d5a
-size 83
+package com.ssafy.jariyo.domain.review.dto;
+import com.ssafy.jariyo.domain.board.entity.BoardDomain;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Data
+public class ReviewResponseGetDto {
+    private Long reviewId;
+    private Long userId;
+    private String userName;
+    private List<String> images;
+    private String content;
+    private LocalDateTime regDate;
+}

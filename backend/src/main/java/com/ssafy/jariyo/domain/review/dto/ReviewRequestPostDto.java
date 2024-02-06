@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6249551ed8512e7f460351a1fccca060a74dfe08e893d011aea50076075557ce
-size 83
+package com.ssafy.jariyo.domain.review.dto;
+
+import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
+
+@Data
+public class ReviewRequestPostDto {
+    private String storeId;
+    private String content;
+    private Integer reviewStar;
+    private MultipartFile[] upfile;
+}
