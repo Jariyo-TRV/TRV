@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84a3e32e9b9be9fbb80bdb97114be57d0996661db96e8bec7d534ac919704e3a
-size 505
+package com.ssafy.jariyo.domain.s3image.repository;
+
+import com.ssafy.jariyo.domain.board.entity.Board;
+import com.ssafy.jariyo.domain.s3image.entity.BoardS3Image;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface BoardS3ImageRepository extends JpaRepository<BoardS3Image, Long> {
+    List<BoardS3Image> findAllByBoard(Board board); // Board 엔티티 인스턴스를 기반으로 조회
+}

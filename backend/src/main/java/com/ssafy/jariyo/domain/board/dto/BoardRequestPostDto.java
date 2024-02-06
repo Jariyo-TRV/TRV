@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3fc3bd03be5f0c95ec96b3048c91ef44f861a5942067418f184cc5041071444
-size 313
+package com.ssafy.jariyo.domain.board.dto;
+
+import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
+
+@Data
+public class BoardRequestPostDto {
+    private String domain;
+    private Boolean useStoreId;
+    private String title;
+    private String content;
+    private MultipartFile[] upfile;
+}
