@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76d0a1527b82283eba97e76eec089997a4074f4fef819648443e439823e7514d
-size 418
+package com.ssafy.jariyo.domain.store.dto.request;
+
+import jakarta.persistence.Column;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class StoreRequestReservationInfoDto {
+    private String storeReservationStartDate;
+    private String storeReservationEndDate;
+    private String storeReservationAvailableHours;
+}
