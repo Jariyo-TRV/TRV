@@ -1,4 +1,4 @@
-package com.ssafy.jariyo.domain.store.dto;
+package com.ssafy.jariyo.domain.store.dto.request;
 
 import jakarta.persistence.Column;
 import lombok.*;
