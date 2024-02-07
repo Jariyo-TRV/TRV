@@ -12,6 +12,5 @@ public class StoreRequestPatchDto {
     private boolean storeIsWaiting;
     private String storeOperationHours;
     private Status storeReservationStatus;
-    private LocalDate storeReservationStartDate;
-    private LocalDate storeReservationEndDate;
+    private String storeReservationAvailableDates;
 }
