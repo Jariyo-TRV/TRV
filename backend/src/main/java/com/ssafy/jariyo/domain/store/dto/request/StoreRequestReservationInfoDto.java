@@ -11,7 +11,6 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 public class StoreRequestReservationInfoDto {
-    private String storeReservationStartDate;
-    private String storeReservationEndDate;
+    private String storeReservationAvailableDates;
     private String storeReservationAvailableHours;
 }

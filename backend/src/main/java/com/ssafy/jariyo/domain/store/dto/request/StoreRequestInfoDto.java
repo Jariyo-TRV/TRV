@@ -13,5 +13,6 @@ public class StoreRequestInfoDto {
     private String storeDetail;
     private String storeOperationHours;
     private String storeOperationDates;
+    private String storeMenu;
 
 }
