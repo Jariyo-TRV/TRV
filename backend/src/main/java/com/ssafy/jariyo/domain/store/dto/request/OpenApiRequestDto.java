@@ -4,10 +4,10 @@ import lombok.*;
 
 import java.util.List;
 
-@NoArgsConstructor
 @Getter
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Setter
 public class OpenApiRequestDto {

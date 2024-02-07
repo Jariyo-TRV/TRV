@@ -2,10 +2,10 @@ package com.ssafy.jariyo.domain.reservation.dto.response;
 
 import lombok.*;
 
-@NoArgsConstructor
 @Getter
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class DiningTableResponseDto {
     private Integer diningTableNumber;
