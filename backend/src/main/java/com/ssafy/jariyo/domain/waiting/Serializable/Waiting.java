@@ -1,17 +1,3 @@
-package com.ssafy.jariyo.domain.waiting.Serializable;
-
-import lombok.Data;
-
-import java.io.Serializable;
-import java.time.LocalDateTime;
-
-@Data
-public class Waiting implements Serializable {
-    private Long storeId;
-    private String storeName;
-    private Long userId;
-    private String userName;
-    private Integer waitingUserCount;
-    private Boolean waitingIsPostpone;
-    private LocalDateTime registeredTime;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d0f12337489aa8d8ef47ea9b70b3d858f5628638901de1ca1d604e0734d3a2f
+size 676
