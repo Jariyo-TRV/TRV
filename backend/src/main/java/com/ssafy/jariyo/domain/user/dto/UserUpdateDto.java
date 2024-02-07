@@ -1,13 +1,13 @@
 package com.ssafy.jariyo.domain.user.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @NoArgsConstructor
 @Getter
 @ToString
+@Builder
+@AllArgsConstructor
 public class UserUpdateDto {
-    private String nickname;
-    private String email;
+    private String phone;
+    private String hometown;
 }

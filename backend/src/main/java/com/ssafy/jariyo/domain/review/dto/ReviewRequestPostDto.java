@@ -7,5 +7,6 @@ import org.springframework.web.multipart.MultipartFile;
 public class ReviewRequestPostDto {
     private String storeId;
     private String content;
+    private Integer reviewStar;
     private MultipartFile[] upfile;
 }
