@@ -1,16 +1,3 @@
-package com.ssafy.jariyo.domain.playroom.dto;
-
-import lombok.Data;
-
-import java.sql.Timestamp;
-
-@Data
-public class PlayroomRequestUpdateDto {
-    private String title;
-    private String image;
-    private String status;
-    private String info;
-    private String category;
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:37580c8ef5e0f434c55c8d3d7b2945c43ffd01ef8f9c264cd3bbcbc5f469c837
+size 279
