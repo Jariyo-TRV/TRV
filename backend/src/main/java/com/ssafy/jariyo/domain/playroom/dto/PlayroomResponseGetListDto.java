@@ -1,21 +1,3 @@
-package com.ssafy.jariyo.domain.playroom.dto;
-
-import lombok.Data;
-
-import java.sql.Timestamp;
-
-@Data
-public class PlayroomResponseGetListDto {
-    private Long storeId;
-    private String title;
-    private Timestamp startTime;
-    private Timestamp endTime;
-    private String image;
-    private String status;
-    private String info;
-    private Integer userCount;
-    private Integer likes;
-    private String category;
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:669e54ca090b626965b83de4fafdd26da70bff204edd4758cbfef4ee88fd3c26
+size 429
