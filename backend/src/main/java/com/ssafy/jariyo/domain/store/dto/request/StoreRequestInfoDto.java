@@ -3,10 +3,10 @@ package com.ssafy.jariyo.domain.store.dto.request;
 import jakarta.persistence.Column;
 import lombok.*;
 
-@NoArgsConstructor
 @Getter
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class StoreRequestInfoDto {
 
@@ -14,5 +14,6 @@ public class StoreRequestInfoDto {
     private String storeOperationHours;
     private String storeOperationDates;
     private String storeMenu;
+    private String storePhone;
 
 }
