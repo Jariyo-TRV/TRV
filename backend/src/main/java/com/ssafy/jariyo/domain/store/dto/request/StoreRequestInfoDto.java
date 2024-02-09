@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:308622ce41614650b1c1633dbbeb4960af65b645b5288c0ce98bb2c7382ab896
-size 383
+package com.ssafy.jariyo.domain.store.dto.request;
+
+import jakarta.persistence.Column;
+import lombok.*;
+
+@Getter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class StoreRequestInfoDto {
+
+    private String storeDetail;
+    private String storeOperationHours;
+    private String storeOperationDates;
+    private String storeMenu;
+    private String storePhone;
+
+}
