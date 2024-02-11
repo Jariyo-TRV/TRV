@@ -16,4 +16,5 @@ public class PlayroomRequestUpdateDto {
     private Boolean chatting;
     private Boolean calling;
     private Boolean broadcasting;
+    private Boolean waiting;
 }
