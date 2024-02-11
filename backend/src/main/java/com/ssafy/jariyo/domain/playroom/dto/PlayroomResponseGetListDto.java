@@ -1,21 +1,18 @@
 package com.ssafy.jariyo.domain.playroom.dto;
 
+import com.ssafy.jariyo.domain.board.dto.BoardResponseGetDto;
+import com.ssafy.jariyo.domain.playroom.entity.Playroom;
 import lombok.Data;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 public class PlayroomResponseGetListDto {
-    private Long storeId;
-    private String title;
-    private Timestamp startTime;
-    private Timestamp endTime;
-    private String image;
-    private String status;
-    private String info;
-    private Integer userCount;
-    private Integer likes;
-    private String category;
+
+    List<PlayroomResponseGetDto> list;
+    private int totalPages;
+    private long totalElements;
 }
 
 
