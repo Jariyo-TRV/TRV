@@ -2,6 +2,8 @@ package com.ssafy.jariyo.domain.reservation.dto.response;
 
 import lombok.*;
 
+import java.util.List;
+
 @NoArgsConstructor
 @Getter
 @ToString
@@ -10,5 +12,5 @@ import lombok.*;
 public class AvailableReservationResponseDto {
     private Long storeId;
     private String time;
-    private DiningTableResponseDto diningTableResponseDto;
+    private List<DiningTableResponseDto> diningTableResponseDtoList;
 }
