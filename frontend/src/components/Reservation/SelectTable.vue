@@ -1,7 +1,3 @@
-<template>
-    <div>사업자 테이블 설정 DB로부터 받아와서 소비자에게</div>
-</template>
-
-<script setup></script>
-
-<style scoped></style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c799940eb0900829b4728e7e3c93316cef5d2e78cb7d882f62d1529b3b3c1d12
+size 979
