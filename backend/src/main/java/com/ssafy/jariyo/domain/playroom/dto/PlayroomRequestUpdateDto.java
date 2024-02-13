@@ -1,20 +1,3 @@
-package com.ssafy.jariyo.domain.playroom.dto;
-
-import lombok.Data;
-
-import java.time.LocalDateTime;
-
-@Data
-public class PlayroomRequestUpdateDto {
-
-    private String title;
-    private String image;
-    private String info;
-    private Integer userCount;
-    private String category;
-
-    private Boolean chatting;
-    private Boolean calling;
-    private Boolean broadcasting;
-    private Boolean waiting;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:defbf2a86428292164bbef3e607d2720fd27a4cea821ca33407bbd08cae41878
+size 410
