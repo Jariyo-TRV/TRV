@@ -1,21 +1,3 @@
-package com.ssafy.jariyo.domain.reservation.dto.response;
-
-import com.ssafy.jariyo.global.entity.Status;
-import lombok.*;
-
-import java.time.LocalDate;
-
-@NoArgsConstructor
-@Getter
-@ToString
-@AllArgsConstructor
-@Builder
-public class ReservationByStoreResponseDto {
-    private Long reservationId;
-    private String nickname;
-    private LocalDate reservationDate;
-    private String reservationTime;
-    private Integer reservationUserCount;
-    private Integer diningTableNumber;
-    private Status status;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:35aafb81ab74b8015be09613664f03459f2f682367572f6d4a4602d52a54f4fb
+size 509
