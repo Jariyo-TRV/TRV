@@ -10,4 +10,5 @@ import lombok.*;
 public class PayInfoDto {
     private Integer price;
     private String itemName;
+    private String redirectUri;
 }
