@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cda766ff46413b42e6fafaaf56ad4d86b42cd038e9c334ca719404ef793b3aaf
-size 6067
+<template>
+    <h1 style="text-align: center">팔로우한 가게 목록</h1>
+    <CardList />
+</template>
+
+<script setup>
+import CardList from '@/components/CardList.vue';
+</script>
+
+<style scoped></style>
