@@ -9,12 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ZPassResponseActiveDto {
-    private Long storeId;
-    private String storeName;
     private Long userId;
-    private String nickname;
     private Long zpassId;
-    private String zpassName;
-    private Integer zpassQuantity;
     private Status zpassStatus;
 }
