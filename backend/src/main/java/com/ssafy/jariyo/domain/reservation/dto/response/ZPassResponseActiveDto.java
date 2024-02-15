@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f321214ae4c29f06c1b1f74083ede90a444d78a391185dfc21807b7ed3c401fb
-size 312
+package com.ssafy.jariyo.domain.reservation.dto.response;
+
+import com.ssafy.jariyo.global.entity.Status;
+import lombok.*;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class ZPassResponseActiveDto {
+    private Long userId;
+    private Long zpassId;
+    private Status zpassStatus;
+}
