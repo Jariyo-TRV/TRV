@@ -1,19 +1,3 @@
-package com.ssafy.jariyo.domain.reservation.dto.response;
-
-import lombok.*;
-
-@Getter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class DiningTableResponseDto {
-    private Integer diningTableNumber;
-    private Integer diningTableCapacity;
-    private Boolean diningTableIsAvailable;
-    private String diningTableType;
-    private Integer diningTableX;
-    private Integer diningTableY;
-    private Integer height;
-    private Integer width;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27041caa40ad3319cbcd86665ad9df13392539a029efcd27f1871a9f9c5326fe
+size 539
