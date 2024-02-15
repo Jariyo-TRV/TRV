@@ -11,4 +11,6 @@ public class WaitingResponseGetDto {
     private Integer waitingSequence;
     private Integer waitingUserCount;
     private Boolean waitingIsPostpone;
+
+    private String imageUrl;
 }
