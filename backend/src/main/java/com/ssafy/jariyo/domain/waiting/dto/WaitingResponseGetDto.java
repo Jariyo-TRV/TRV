@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d8a276c257a0672cab2466ff853a41b28805bbc0400abd646cae650e2d2763b
-size 344
+package com.ssafy.jariyo.domain.waiting.dto;
+
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+public class WaitingResponseGetDto {
+    private String storeId;
+    private String userId;
+    private Integer waitingSequence;
+    private Integer waitingUserCount;
+    private Boolean waitingIsPostpone;
+
+    private String imageUrl;
+}
