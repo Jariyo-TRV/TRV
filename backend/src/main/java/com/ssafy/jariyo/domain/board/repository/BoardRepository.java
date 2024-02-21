@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09503c17e9c123b5f3ba6ae37b3755a2be1b68d4775b5e2cc42fc7d0aaead269
-size 720
+package com.ssafy.jariyo.domain.board.repository;
+
+import com.ssafy.jariyo.domain.board.entity.Board;
+import com.ssafy.jariyo.domain.board.entity.BoardDomain;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface BoardRepository extends JpaRepository<Board, Long> {
+    Board findByBoardId(Long boardId);
+
+    Page<Board> findAllByBoardTitleContaining(String BoardTitle, Pageable pageable);
+
+    Page<Board> findAllByBoardTitleContainingAndBoardDomain(String BoardTitle, BoardDomain domain, Pageable pageable);
+
+}

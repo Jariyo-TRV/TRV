@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a2f34f90641da8002668851aeea5a31ee51c61dbcf977314bb4c4281cf274aa
-size 1216
+package com.ssafy.jariyo.global.oauth2;
+
+
+import com.ssafy.jariyo.domain.user.entity.Role;
+import lombok.Getter;
+import lombok.ToString;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
+
+import java.util.Collection;
+import java.util.Map;
+
+/**
+ * DefaultOAuth2User를 상속하고, email과 role 필드를 추가로 가진다.
+ */
+@Getter
+@ToString
+public class OAuth2User extends DefaultOAuth2User {
+
+    private String email;
+    private Role role;
+
+    /**
+     * Constructs a {@code DefaultOAuth2User} using the provided parameters.
+     *
+     * @param authorities      the authorities granted to the user
+     * @param attributes       the attributes about the user
+     * @param nameAttributeKey the key used to access the user's "name" from
+     *                         {@link #getAttributes()}
+     */
+    public OAuth2User(Collection<? extends GrantedAuthority> authorities,
+                      Map<String, Object> attributes, String nameAttributeKey,
+                      String email, Role role) {
+        super(authorities, attributes, nameAttributeKey);
+        this.email = email;
+        this.role = role;
+    }
+}

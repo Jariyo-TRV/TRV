@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09380399a1e5ab5878e8cbf8086910ff80993b275e53b0e7c9957c50ad54c3c6
-size 973
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
+import App from './App.vue';
+import router from './router';
+import './assets/article.css';
+
+import '@mdi/font/css/materialdesignicons.css'; // Vuetify icons
+import 'vuetify/styles'; // Vuetify styles
+import { createVuetify } from 'vuetify'; // Vuetify core
+import * as components from 'vuetify/components'; // Vuetify components
+import * as directives from 'vuetify/directives'; // Vuetify directives
+import { VCalendar } from 'vuetify/labs/VCalendar'; // Vuetify Labs VCalendar
+
+const app = createApp(App);
+
+// Pinia
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+
+// Vuetify
+const vuetify = createVuetify({
+    components: {
+        ...components, // spread all the components
+        VCalendar, // add VCalendar
+    },
+    directives,
+});
+
+app.use(pinia);
+app.use(router);
+app.use(vuetify);
+
+app.mount('#app');
