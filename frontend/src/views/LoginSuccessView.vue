@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd06d5e7251c01256b6f3411b63d7329f29d7f458155d6a8db0cc077f68ee714
-size 690
+<script>
+import { useRoute } from 'vue-router';
+import { onMounted } from 'vue';
+import router from '@/router';
+
+export default {
+    name: 'LoginSuccess',
+    components: [],
+    setup() {
+        const route = useRoute();
+
+        onMounted(() => {
+            const accessToken = route.params.atk;
+            const refreshToken = route.params.rtk;
+
+            // Store the tokens in localStorage
+            localStorage.setItem('accessToken', accessToken);
+            localStorage.setItem('refreshToken', refreshToken);
+
+            // Redirect to the root path
+
+            window.location.href = '/';
+        });
+    },
+};
+</script>
+
+<style scoped>
+/* Your styles here */
+</style>
