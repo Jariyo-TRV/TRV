@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d797960f2a4e237456f73293a5fb9dd18752f41e75e26940f8568f5565b7efdc
-size 767
+package com.ssafy.jariyo.domain.waiting.Serializable;
+
+import lombok.Data;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
+@Data
+public class Waiting implements Serializable {
+    private Long storeId;
+    private String storeName;
+    private Long userId;
+    private String userName;
+    private Integer waitingUserCount;
+    private Boolean waitingIsPostpone;
+    private LocalDateTime registeredTime;
+    private Integer waitingUserOrder;
+    private String storeImage;
+
+    @Override
+    public String toString() {
+        return storeId + "," + storeName + "," + userId + "," + userName + "," +
+                waitingUserCount + "," + waitingIsPostpone + "," + registeredTime + "," +
+                waitingUserOrder + "," + storeImage;
+    }
+}

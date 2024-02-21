@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc975650217c711c5f5aa0852db6b01f0f9e23d833faf4b98732c2d67fc930b6
-size 558
+package com.ssafy.jariyo.domain.playroom.dto;
+
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+public class PlayroomResponseGetDto {
+
+    private Long storeId;
+    private String title;
+    private String image;
+    private String info;
+    private Integer userCount;
+    private String category;
+    private LocalDateTime modDate;
+
+    private Long userId;
+    private String userNickname;
+    private String userImage;
+
+    private Boolean chatting;
+    private Boolean calling;
+    private Boolean broadcasting;
+    private Boolean waiting;
+}
