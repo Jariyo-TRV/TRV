@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2db1df1fbe730886c3460ee930d26a6fe58ccb97228f9a5bd88018d5a1ec84b4
-size 712
+<template>
+    <div v-if="streamManager">
+        <ov-video :stream-manager="streamManager" />
+        <div>
+            <!-- <p>{{ clientData }}</p> -->
+        </div>
+    </div>
+</template>
+
+<script>
+import OvVideo from './OvVideo.vue';
+
+export default {
+    name: 'UserVideo',
+
+    components: {
+        OvVideo,
+    },
+
+    props: {
+        streamManager: Object,
+    },
+
+    computed: {
+        clientData() {
+            const { clientData } = this.getConnectionData();
+            return clientData;
+        },
+    },
+
+    methods: {
+        getConnectionData() {
+            const { connection } = this.streamManager.stream;
+            return JSON.parse(connection.data);
+        },
+    },
+};
+</script>

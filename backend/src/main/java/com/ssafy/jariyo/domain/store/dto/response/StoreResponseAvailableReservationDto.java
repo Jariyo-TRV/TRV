@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23a3ff110884906c8b51247842639d68de1760ea7eff10be8a0de14f241c05e0
-size 654
+package com.ssafy.jariyo.domain.store.dto.response;
+
+import com.ssafy.jariyo.global.entity.Status;
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import lombok.*;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class StoreResponseAvailableReservationDto {
+//    private String storeOperationHours;
+//    private String storeOperationDates;
+//    private Status storeReservationStatus;
+    private List<LocalDateTime> storeReservationAvailableDates;
+    private List<String> storeReservationAvailableHours;
+}

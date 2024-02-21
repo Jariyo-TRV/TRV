@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a8eb067185c57af2cbdf39712db01f40e2573fe74ea802c786e7285ade401d9
-size 960
+package com.ssafy.jariyo.domain.store.dto.request;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import lombok.ToString;
+import org.springframework.web.multipart.MultipartFile;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+public class StoreRequestRegistDto {
+
+    // 사업자 대표명
+    private String ownerName;
+
+    @NotBlank(message = "Store name is required")
+    @Size(max = 100, message = "Store name must not exceed 100 characters")
+    private String storeName;
+
+    @Size(max = 100, message = "Business number must not exceed 100 characters")
+    private String storeBusinessNumber;
+
+    @Size(max = 255, message = "Address must not exceed 255 characters")
+    private String storeAddress;
+
+    private Double storePositionX;
+    private Double storePositionY;
+
+//    private List<DiningTableRequestDto> diningTables;
+
+}

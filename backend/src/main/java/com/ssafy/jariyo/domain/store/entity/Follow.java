@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ca0581335f41798398d38708695fe8e214a2aa2834e39056d7dfe387a13fcde
-size 875
+package com.ssafy.jariyo.domain.store.entity;
+
+import com.ssafy.jariyo.domain.store.entity.Store;
+import com.ssafy.jariyo.domain.user.entity.User;
+import com.ssafy.jariyo.global.entity.BaseObject;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.sql.Timestamp;
+
+@Entity
+@Table(name = "follow")
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Follow extends BaseObject {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "follow_id", nullable = false)
+    private Long followId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "store_id", nullable = false)
+    private Store store;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
+}
