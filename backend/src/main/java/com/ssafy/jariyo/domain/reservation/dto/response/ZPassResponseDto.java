@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a11a1186231571ee7032f81b97fa87cfbaaf177d8352ec4e576643fac7fe8ec5
-size 539
+package com.ssafy.jariyo.domain.reservation.dto.response;
+
+import com.ssafy.jariyo.global.entity.Status;
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import lombok.*;
+
+import java.time.LocalDateTime;
+
+@NoArgsConstructor
+@Getter
+@ToString
+@AllArgsConstructor
+@Builder
+public class ZPassResponseDto {
+    private Long zpassId;
+    private String zpassName;
+    private Integer zpassQuantity;
+    private Status zpassStatus;
+//    private LocalDateTime zpassExpirationDate;
+}

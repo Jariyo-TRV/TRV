@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfbaf8c71f87e6a6ec648e7bc65790e7c5073999aa91e50ca4a77a25c2d8dfcc
-size 628
+package com.ssafy.jariyo.global.oauth2.userinfo;
+
+import java.util.Map;
+
+
+public class GoogleOAuth2UserInfo extends OAuth2UserInfo {
+
+    public GoogleOAuth2UserInfo(Map<String, Object> attributes) {
+        super(attributes);
+    }
+
+    @Override
+    public String getId() {
+        return (String) attributes.get("sub");
+    }
+
+    @Override
+    public String getEmail() {return (String) attributes.get("email");}
+
+    @Override
+    public String getNickname() {
+        return (String) attributes.get("name");
+    }
+
+    @Override
+    public String getImageUrl() {
+        return (String) attributes.get("picture");
+    }
+}
+

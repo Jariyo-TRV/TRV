@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c17928d89f6d4a342afc923dca8a5f388dbbb836f1d896f7f945fcb327085797
-size 661
+package com.ssafy.jariyo.domain.store.repository;
+
+import com.ssafy.jariyo.domain.store.entity.Follow;
+import com.ssafy.jariyo.domain.store.entity.Store;
+import com.ssafy.jariyo.domain.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface FollowRepository extends JpaRepository<Follow, Long> {
+
+    List<Follow> findAllByStoreAndIsDeleted(Store store, Boolean isDeleted);
+
+    List<Follow> findAllByUserAndIsDeleted(User user, Boolean isDeleted);
+
+    Follow findByStoreAndUser(Store store, User user);
+
+    Follow findByStoreAndUserAndIsDeleted(Store store, User user, Boolean isDeleted);
+
+}

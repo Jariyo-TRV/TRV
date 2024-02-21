@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43988f063cf419c340b147a92ad92d5c052cc84b7477d7f3171ae8e19ee9a378
-size 528
+package com.ssafy.jariyo.domain.review.repository;
+
+import com.ssafy.jariyo.domain.review.entity.Review;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ReviewRepository extends JpaRepository<Review, Long> {
+    Review findByReviewId(Long reviewId);
+
+    Page<Review> findAllByReviewContentContaining(String Keyword, Pageable pageable);
+
+}
